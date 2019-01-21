@@ -1,0 +1,28 @@
+
+    <div id="wrapper">
+ <h1><i>..Articles..</i></h1>
+
+<div class="row">
+
+  
+ {{#each articles}}
+<div class="col-sm-5">
+ <div><img src="{{img}}"></div></div>
+    
+        
+      <div class= "col-sm-6">
+    
+     <p><span class="label1"></span><strong> {{title}}</strong></p>
+     <p><span class="label"></span> {{summary}}</p>
+       <p class = "link">Read More: <a href="">{{link}}</a></p>
+
+     <button><a href=" /articles/{{this._id}}" id="view comments" data-id="{{this.id}}">View Comments</a></bitton>
+     <button class="add" data-id="{{this._id}}">Leave a Comment</button>
+       <button class="delete" data-id="{{this._id}}">Delete</button>
+      <p id="notes"></p>
+
+  </div>
+ {{/each}}
+
+</div>
+</div>

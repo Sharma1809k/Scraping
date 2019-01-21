@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+}
+#wrapper{
+
+  font-family: 'Charm', cursive;
+}
+h1 {
+  margin:auto;
+  width : 30%;
+  font-size: 80px
+}
+.row , .col-sm-5 , .col-sm-7{
+  padding: 20px 
+}
+.col-sm-6{
+  margin-top: 20px;
+  font-size: 20px
+}
+
+.add , .delete{
+  color: rgb(87, 123, 224)
+}
+
+button{
+  margin-left: 30px;
+}
