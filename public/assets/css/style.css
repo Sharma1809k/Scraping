@@ -10,6 +10,11 @@ h1 {
   width : 30%;
   font-size: 80px
 }
+.scrape{
+  margin-left:33%;
+  width : 30%;
+  font-size: 30px
+}
 .row , .col-sm-5 , .col-sm-7{
   padding: 20px 
 }

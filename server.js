@@ -9,8 +9,6 @@ var router = express.Router();
 var axios = require("axios");
 var cheerio = require("cheerio");
 
-
-
 // Require all models
 var db = require("./models");
 

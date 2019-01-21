@@ -1,13 +1,15 @@
+$(document).ready(function () {
+  $(".scrape").on("click", function (event) {
+   $.ajax({
+      method: "GET",
+      url: "/scrape"
+    }).then(function (data) {
+       location.reload()
+       console.log(data);
+      });
+  });
 
-$.getJSON("/articles", function(data) {
-  // For each one
-  for (var i = 0; i < data.length; i++) {
-    // Display the apropos information on the page
-    $("#articles").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].link + data.note +"</p>");
-  }
-});
-
-// Whenever someone clicks a p tag
+// Whenever someone clicks leave a comment
 $(document).on("click", ".add", function() {
   // Empty the notes from the note section
   $("#notes").empty();
@@ -62,9 +64,7 @@ $(document).on("click", "#savenote", function() {
       // Empty the notes section
       $("#notes").empty();
       console.log(data)
-   
     });
-
 });
 
 $(document).on("click", ".delete", function () {
@@ -77,4 +77,5 @@ $(document).on("click", ".delete", function () {
   }).then(function () {
       location.reload();
   });
+});
 });
