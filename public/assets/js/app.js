@@ -13,7 +13,7 @@ $(document).ready(function () {
 $(document).on("click", ".add", function() {
   // Empty the notes from the note section
   $("#notes").empty();
-  // Save the id from the p tag
+  // Save the id from the .add tag
   var thisId = $(this).attr("data-id");
 
   // Now make an ajax call for the Article
