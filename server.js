@@ -29,9 +29,9 @@ app.use(express.static("public"));
 
 
 // Connect to the Mongo DB
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://RemoteDB:heroku_cf0s1dsk@ds163014.mlab.com:63014/heroku_cf0s1dsk"; 
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 
-mongoose.connect(MONGODB_URI );
+mongoose.connect(MONGODB_URI);
 
 
 // Set Handlebars.
