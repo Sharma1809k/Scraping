@@ -18,7 +18,7 @@ h1 {
 .row , .col-sm-5 , .col-sm-7{
   padding: 20px 
 }
-.col-sm-6{
+.col-sm-7{
   margin-top: 20px;
   font-size: 20px
 }
@@ -29,4 +29,10 @@ h1 {
 
 button{
   margin-left: 30px;
+}
+
+img{
+  width: 500px;
+  height: 300px;
+
 }
